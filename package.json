@@ -1,0 +1,32 @@
+{
+  "name": "quoqui",
+  "description": "A Javascript/Typescript wrapper for the Terraform CLI",
+  "version": "1.0.0",
+  "author": "RessieKutch",
+  "keywords": [
+    "doloribus",
+    "typescript",
+    "illum"
+  ],
+  "bugs": {
+    "url": "https://github.com/VivianneLind/quoqui.git/issues"
+  },
+  "homepage": "https://github.com/VivianneLind/quoqui.git",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/VivianneLind/quoqui.git"
+  },
+  "scripts": {
+    "build": "rimraf dist doc && tsc && typedoc --theme default --target ES6 --out doc/ src/",
+    "watch": "rimraf dist && tsc -w"
+  },
+  "devDependencies": {
+    "rimraf": "^2.6.2",
+    "tslint": "^5.8.0",
+    "typedoc": "^0.9.0",
+    "typedoc-clarity-theme": "^1.1.0",
+    "typescript": "^2.6.1"
+  }
+}
